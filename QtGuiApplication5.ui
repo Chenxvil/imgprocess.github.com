@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>QtGuiApplication5Class</class>
+ <widget class="QMainWindow" name="QtGuiApplication5Class">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>812</width>
+    <height>519</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>QtGuiApplication5</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QCheckBox" name="checkBox">
+    <property name="geometry">
+     <rect>
+      <x>569</x>
+      <y>11</y>
+      <width>121</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>循环处理100次</string>
+    </property>
+   </widget>
+   <widget class="QSlider" name="hSliderDegree">
+    <property name="geometry">
+     <rect>
+      <x>56</x>
+      <y>52</y>
+      <width>101</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>1</number>
+    </property>
+    <property name="maximum">
+     <number>100</number>
+    </property>
+    <property name="singleStep">
+     <number>1</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>-3</x>
+      <y>-8</y>
+      <width>851</width>
+      <height>531</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/QtGuiApplication5/1.jpg);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ButtonProcess">
+    <property name="geometry">
+     <rect>
+      <x>710</x>
+      <y>5</y>
+      <width>85</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>处理</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelThread">
+    <property name="geometry">
+     <rect>
+      <x>388</x>
+      <y>12</y>
+      <width>45</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;线程数&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ButtonShow">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>48</y>
+      <width>80</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>显示原图</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelInImage">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>88</y>
+      <width>385</width>
+      <height>300</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(135, 253, 255);</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;初始图片&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="combBoxFunction">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>8</y>
+      <width>115</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>高斯噪声</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>图像缩放</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>图像旋转</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="labeThreadCount">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>10</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+      <underline>false</underline>
+     </font>
+    </property>
+    <property name="text">
+     <string>1</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ButtonSave">
+    <property name="geometry">
+     <rect>
+      <x>710</x>
+      <y>48</y>
+      <width>85</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>保存</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelOutImage">
+    <property name="geometry">
+     <rect>
+      <x>415</x>
+      <y>88</y>
+      <width>385</width>
+      <height>300</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(255, 2, 57)</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;处理后的图片&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelThread_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>54</y>
+      <width>45</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;参数&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="combBoxModel">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>8</y>
+      <width>115</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>单线程模式</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>多线程模式</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>OpenMP模式</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>OpenCL模式</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QSlider" name="hSliderThread">
+    <property name="geometry">
+     <rect>
+      <x>442</x>
+      <y>10</y>
+      <width>100</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>1</number>
+    </property>
+    <property name="maximum">
+     <number>8</number>
+    </property>
+    <property name="pageStep">
+     <number>8</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ButtonApply">
+    <property name="geometry">
+     <rect>
+      <x>620</x>
+      <y>48</y>
+      <width>85</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>应用</string>
+    </property>
+   </widget>
+   <widget class="QTextBrowser" name="textBrowser">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>398</y>
+      <width>791</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(219, 245, 255);</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ButtonOpen">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>7</y>
+      <width>75</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>打开文件</string>
+    </property>
+   </widget>
+   <zorder>label</zorder>
+   <zorder>checkBox</zorder>
+   <zorder>hSliderDegree</zorder>
+   <zorder>ButtonProcess</zorder>
+   <zorder>labelThread</zorder>
+   <zorder>ButtonShow</zorder>
+   <zorder>labelInImage</zorder>
+   <zorder>combBoxFunction</zorder>
+   <zorder>labeThreadCount</zorder>
+   <zorder>ButtonSave</zorder>
+   <zorder>labelOutImage</zorder>
+   <zorder>labelThread_2</zorder>
+   <zorder>combBoxModel</zorder>
+   <zorder>hSliderThread</zorder>
+   <zorder>ButtonApply</zorder>
+   <zorder>textBrowser</zorder>
+   <zorder>ButtonOpen</zorder>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="QtGuiApplication5.qrc"/>
+ </resources>
+ <connections/>
+</ui>
